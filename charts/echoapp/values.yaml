@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: eu.gcr.io/develeap-bootcamp/echo
+  repository: eu.gcr.io/develeapecho/echo
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
