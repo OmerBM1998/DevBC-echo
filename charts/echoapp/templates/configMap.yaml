@@ -1,0 +1,6 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ include "echoapp.fullname" . }}-{{ .Values.configmap.name }}
+data:
+  LOGLEVEL: {{ .Values.configmap.loglevel | quote }}

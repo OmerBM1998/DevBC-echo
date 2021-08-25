@@ -1,0 +1,20 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: echoapp-dev
+  namespace: dev
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:dev-*
+spec:
+  releaseName: echoapp-dev
+  chart:
+    git: git@github.com:OmerBM1998/develeap-echoapp
+    path: charts/echoapp
+    ref: main
+  values:
+    image:
+      repository: eu.gcr.io/develeap-bootcamp/echo
+      tag: dev-id7gd7ii
+    replicaCount: 1
