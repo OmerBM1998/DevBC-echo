@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-repository="eu.gcr.io/develeap-bootcamp/echo"
+repository="eu.gcr.io/develeapecho/echo"
 branch="master"
 version=""
 commit=$(cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1 | awk '{print tolower($0)}')
