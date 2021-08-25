@@ -10,11 +10,11 @@ metadata:
 spec:
   releaseName: echoapp-prod
   chart:
-    git: git@github.com:OmerBM1998/develeap-echoapp
+    git: git@github.com:OmerBM1998/DevBC-echo
     path: charts/echoapp
     ref: main
   values:
     image:
-      repository: eu.gcr.io/develeap-bootcamp/echo
+      repository: eu.gcr.io/develeapecho/echo
       tag: 1.0.2
     replicaCount: 3
